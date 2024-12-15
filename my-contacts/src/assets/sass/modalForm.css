@@ -1,0 +1,73 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(66, 63, 68, 0.597) 0%, rgba(0, 0, 0, 0.3959558824) 20%, rgba(136, 120, 48, 0.383) 50%, rgba(0, 0, 0, 0.3071603641) 80%, rgba(145, 8, 236, 0.597) 100%);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal .form-wrapper {
+  width: 25%;
+  max-width: 1000px;
+  min-width: 350px;
+  min-height: 500px;
+  border-radius: 5px;
+  margin: auto;
+  background-color: #4c1f7a;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.modal .form-wrapper h2 {
+  font-size: 2rem;
+  color: #eeeeee;
+}
+.modal .form-wrapper .form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.modal .form-wrapper .form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.modal .form-wrapper .form div label {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.modal .form-wrapper .form div input {
+  border: none;
+  outline: none;
+  background-color: #eeeeee;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  transition: all 0.2s;
+  color: #4c1f7a;
+}
+.modal .form-wrapper .form div input:focus {
+  border: 2px solid #eeeeee;
+  background-color: #4c1f7a;
+  color: #eeeeee;
+}
+.modal .form-wrapper .form .form-settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.modal .form-wrapper .form .form-settings button {
+  color: #4c1f7a;
+  padding: 0.5rem 1rem;
+  min-width: 100px;
+  font-size: 1.1rem;
+}/*# sourceMappingURL=modalForm.css.map */

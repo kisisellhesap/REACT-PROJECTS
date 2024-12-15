@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Oswald:wght@200..700&display=swap");
+
+@import "color";
+@import "header";
+@import "contactList";
+@import "modalForm";
+
+// general settings
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-for-p;
+  color: $white-color;
+}
+
+body {
+  background-color: $white-color;
+  user-select: none;
+}
+
+.contacts-app {
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: $font-for-h;
+}
+button {
+  outline: none;
+  border: none;
+  border-radius: $border-radius;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #fff !important;
+  }
+}
+
+i {
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: all 0.1s linear;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.active {
+  opacity: 1;
+  visibility: visible;
+}

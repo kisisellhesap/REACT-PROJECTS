@@ -1,0 +1,153 @@
+.detail {
+  .detail-container {
+    svg {
+      font-size: 1.5rem;
+      color: $orange-color;
+    }
+    .detail-header {
+      border-bottom: 1px solid $border-color;
+      .detail-header-container {
+        display: flex;
+        gap: 2rem;
+        padding-bottom: 2rem;
+        img {
+          width: 200px;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+        .detail-header-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .detail-time-pay {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            span {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              font-weight: 700;
+            }
+          }
+          .detail-restaurant-name {
+            font-size: 2rem;
+            font-weight: 800;
+          }
+          .detail-rating-comment {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            .detail-rating {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+            }
+            .detail-comment {
+              color: $orange-color;
+              font-size: 1.2rem;
+              font-weight: 900;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    .detail-body {
+      .detail-body-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .detail-body-header {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          h2 {
+            font-size: 2rem;
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            svg {
+              font-size: 2rem;
+            }
+          }
+          p {
+            font-family: 700;
+            color: $gray-color;
+          }
+        }
+        .detail-body-list {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+          gap: 1rem;
+          .detail-card-active {
+            background-color: rgb(215, 253, 199);
+          }
+          .detail-card {
+            border: 1px solid $border-color;
+            padding: 1.5rem;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            font-size: 1.2rem;
+            position: relative;
+            cursor: pointer;
+            &:hover {
+              background-color: $orange-color;
+            }
+            &:hover * {
+              color: $white-color !important;
+            }
+
+            &:hover .add-to-basket-btn {
+              background-color: $orange-color;
+            }
+
+            .detail-card-info {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              .detail-food-name {
+              }
+              .detail-food-desc {
+                color: $gray-color;
+              }
+              .detail-food-price {
+                font-weight: 800;
+              }
+            }
+            img {
+              width: 150px;
+              border-radius: 5px;
+              object-fit: cover;
+            }
+            .add-to-basket-btn {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: $white-color;
+              padding: 0.5rem;
+              border: none;
+              outline: none;
+              position: absolute;
+              right: 35px;
+              bottom: 35px;
+              border-radius: 100%;
+
+              &:hover {
+                background-color: $black-color;
+              }
+
+              svg {
+                font-size: 1.2rem;
+                color: $black-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

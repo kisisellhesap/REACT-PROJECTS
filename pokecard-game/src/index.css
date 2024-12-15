@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  color: aliceblue;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.pokemon {
+  padding: 1rem;
+
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 5px;
+  color: black;
+}
+span {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: goldenrod;
+}
+
+img {
+  width: 150px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: max-content;
+  padding: 0rem 1rem;
+}

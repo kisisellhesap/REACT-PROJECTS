@@ -1,0 +1,132 @@
+.basket {
+  .basket-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    h2 {
+    }
+    .basket-main {
+      display: flex;
+      gap: 2rem;
+      .basket-list {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .basket-card {
+          border: 1px solid $border-color;
+          padding: 1.5rem;
+          border-radius: 5px;
+          display: flex;
+          gap: 2rem;
+          cursor: pointer;
+          &:hover {
+            background-color: $orange-color;
+          }
+
+          &:hover * {
+            color: $white-color !important;
+          }
+
+          &:hover .basket-card-quantity-container {
+            background-color: $black-color;
+          }
+
+          img {
+            width: 100px;
+            border-radius: 5px;
+            object-fit: cover;
+          }
+          .basket-card-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .basket-name {
+              font-size: 1.5rem;
+              font-weight: 900;
+              color: $orange-color;
+            }
+            .basket-card-price-quantity {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 1rem;
+              .basket-card-price {
+                font-weight: 900;
+              }
+              .basket-card-quantity-container {
+                font-weight: 900;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                border: 1px solid $border-color;
+                border-radius: 5px;
+                overflow: hidden;
+                button {
+                  padding: 0.5rem 0.7rem;
+                  border: none;
+                  outline: none;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 1rem;
+                  font-weight: 900;
+                  background-color: transparent;
+                  &:hover {
+                    background-color: $orange-color;
+                    color: $white-color;
+                  }
+                }
+
+                .decrement {
+                }
+                .basket-card-quantity {
+                }
+                .increment {
+                }
+              }
+            }
+          }
+        }
+      }
+      .basket-details {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+        width: 20%;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        font-weight: 700;
+        height: fit-content;
+        h3 {
+        }
+        .product-total-quantity {
+          color: $gray-color;
+          span {
+            color: $orange-color;
+          }
+        }
+        .product-total-price {
+          color: $gray-color;
+
+          span {
+            color: $orange-color;
+          }
+        }
+        a {
+          background-color: $orange-color;
+          color: $white-color;
+          padding: 1rem;
+          border-radius: 5px;
+          text-align: center;
+          margin-top: 2rem;
+          &:hover {
+            filter: brightness(120%);
+          }
+        }
+      }
+    }
+  }
+}

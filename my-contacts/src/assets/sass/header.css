@@ -1,0 +1,59 @@
+.header-wrapper {
+  background-color: #4c1f7a;
+  padding: 1rem;
+}
+.header-wrapper .header-container {
+  width: 60%;
+  max-width: 2000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-wrapper .header-container h1 {
+  font-size: 3rem;
+}
+.header-wrapper .header-container .header-input-container {
+  display: flex;
+  gap: 0.8rem;
+  padding: 0.5rem;
+  min-width: 300px;
+}
+.header-wrapper .header-container .header-input-container .search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 1rem;
+}
+.header-wrapper .header-container .header-input-container .search-input::-moz-placeholder {
+  color: #eeeeee;
+  font-size: 1rem;
+}
+.header-wrapper .header-container .header-input-container .search-input::placeholder {
+  color: #eeeeee;
+  font-size: 1rem;
+}
+.header-wrapper .header-container .header-btn-settings {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.header-wrapper .header-container .header-btn-settings .header-add-contact-btn {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background-color: #eeeeee;
+}
+.header-wrapper .header-container .header-btn-settings .header-add-contact-btn:hover i {
+  transform: scale(1.1);
+}
+.header-wrapper .header-container .header-btn-settings .header-add-contact-btn i {
+  color: #4c1f7a;
+}
+.header-wrapper .header-container .header-btn-settings .header-add-contact-btn span {
+  color: #4c1f7a;
+  font-size: 1.1rem;
+  font-weight: 400;
+}/*# sourceMappingURL=header.css.map */

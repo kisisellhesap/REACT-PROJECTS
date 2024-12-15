@@ -1,0 +1,41 @@
+.add-job {
+  .container {
+    background-color: purple;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 1rem;
+    }
+    form {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+      align-items: flex-end;
+      gap: 1rem;
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        * {
+          color: black;
+          font-size: 0.9rem;
+        }
+        label {
+          color: white !important;
+        }
+        input {
+        }
+        select {
+          option {
+          }
+        }
+      }
+
+      button {
+        background-color: black;
+        font-size: 1rem;
+      }
+    }
+  }
+}

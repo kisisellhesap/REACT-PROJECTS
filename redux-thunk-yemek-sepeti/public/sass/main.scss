@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import "color";
+@import "header";
+@import "home";
+@import "detail";
+@import "basket";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #fff;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.wrapper {
+}
+
+.container {
+  width: 80%;
+  min-width: 700px;
+  margin: auto;
+  padding: 2rem 0rem;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:visited {
+    color: $black-color;
+  }
+  p {
+    color: $black-color;
+  }
+}
+
+button {
+  cursor: pointer;
+}

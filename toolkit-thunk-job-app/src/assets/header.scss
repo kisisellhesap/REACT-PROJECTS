@@ -1,0 +1,16 @@
+header {
+  background-color: purple;
+
+  margin-bottom: 1rem;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
+}

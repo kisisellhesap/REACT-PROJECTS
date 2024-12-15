@@ -1,0 +1,54 @@
+header {
+  border-bottom: 1px solid $border-color;
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    > a {
+      color: $orange-color;
+      font-size: 2rem;
+    }
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .res-length-info {
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        &:hover {
+          text-decoration: underline;
+        }
+        span {
+          color: $orange-color;
+        }
+      }
+      .header-btns {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        button {
+          padding: 0.5rem;
+          border-radius: 5px;
+          background-color: transparent;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          color: $orange-color;
+
+          &:hover {
+            background-color: $orange-color;
+            color: $white-color;
+          }
+        }
+      }
+      a {
+        display: flex;
+        gap: 0.5rem;
+        span {
+          color: $black-color;
+        }
+      }
+    }
+  }
+}

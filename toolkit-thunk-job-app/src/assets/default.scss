@@ -1,0 +1,70 @@
+@import "header";
+@import "filter";
+@import "joblist";
+@import "addJob";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  min-height: 100vh;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.active {
+  color: white;
+  background-color: black;
+}
+
+button,
+input,
+select {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+button {
+  &:hover {
+    filter: brightness(120%);
+  }
+}
